@@ -14,7 +14,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `It is currently ${
+        `${response.body.daily.data[0].summary} It is currently ${
           response.body.currently.temperature
         } degrees. There is  ${
           response.body.currently.precipProbability
